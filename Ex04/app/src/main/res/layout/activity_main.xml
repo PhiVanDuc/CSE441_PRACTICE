@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="236dp"
+        android:text="Fahrenheit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.284"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_1"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Celsius"
+        app:layout_constraintEnd_toEndOf="@+id/edt_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_1"
+        app:layout_constraintTop_toBottomOf="@+id/edt_1" />
+
+    <EditText
+        android:id="@+id/edt_2"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Convert To Celsius"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/edt_2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_2"
+        app:layout_constraintTop_toBottomOf="@+id/edt_2" />
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Convert To Fahrenheit"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_1"
+        app:layout_constraintStart_toEndOf="@+id/btn_1"
+        app:layout_constraintTop_toTopOf="@+id/btn_1" />
+
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="Clear"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/edt_2"
+        app:layout_constraintStart_toStartOf="@+id/edt_2"
+        app:layout_constraintTop_toBottomOf="@+id/edt_2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
